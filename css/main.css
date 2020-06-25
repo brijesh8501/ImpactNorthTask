@@ -1,0 +1,217 @@
+@font-face{
+    font-family: 'Gotham';
+    src: url('/ImpactNorth/assets/fonts/NouvelleVague-Black.ttf');
+}
+header{
+    position: relative;
+}
+#bannerTxt{
+    font-family: Gotham;
+    letter-spacing: 5px;
+    font-size: 58px;
+   
+}
+#banner {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+#bannerWrapper{
+    width: 85vw;
+}
+.banner-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#bannerLftTxt, #bannerRghtTxt{
+    letter-spacing: 5px;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    position: absolute;
+    top: 50%;
+    
+}
+#bannerLftTxt{
+    color: black;
+    left: 4%;
+}
+#bannerRghtTxt {
+    left: 96.5%;
+    white-space: nowrap;
+    color: green;
+}
+.btn-primary{
+    background-color: green !important;
+    border-color: green !important;
+}
+.btn-primary:hover, .btn-primary:focus{
+    background-color: green !important;
+    border-color: green !important;
+    opacity: 0.7;
+    box-shadow: 0 0 0 0.2rem rgba(0,128,0,.5) !important;
+}
+h3{
+    font-family: Gotham;
+    color: green;
+}
+.post-img-wrapper{
+    position: relative;
+}
+.post-img {
+    outline: #e8e8e8 solid 1px;
+}
+.post-img-background, .post-img-txt{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+} 
+.post-img-background {
+    background-color: green;
+    opacity: 0.5;
+    color: white;
+}
+.post-img-txt{
+   color: white;
+   padding:10px;
+   font-size: 26px;
+}
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+    border-bottom: 2px solid green;
+    letter-spacing: 5px;
+}
+.footer{
+    background-color: #484848;
+    width: 100%;
+}
+.social-links a{
+    text-align: center;
+	float: left;
+	width: 46px;
+	height: 46px;
+	border: 1px solid green;
+	border-radius: 100%;
+    margin-right: 7px; /*space between*/
+    background-color: green;
+
+} 
+.social-links a i{
+	font-size: 20px;
+    line-height: 45px;
+	color: white;
+}
+input[type=checkbox], input[type=radio]{
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(1.5); /* IE */
+    -moz-transform: scale(1.5); /* FF */
+    -webkit-transform: scale(1.5); /* Safari and Chrome */
+    -o-transform: scale(1.5); /* Opera */
+}
+.form-check-inline .form-check-input {
+    margin-right: 0.8rem !important;
+}
+.alert-danger {
+    background-color: #fbe9eb;
+    border-color: #fbe9eb;
+    border-left: 4px solid #721c24;
+    border-radius: 0;
+}
+.is-invalid::-webkit-input-placeholder { 
+    color: #dc3545;
+}
+.broker-invalid {
+    border: 1px solid #dc3545;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+}
+#scrollup {
+    height: 80px;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    display: none;
+    text-indent: -9999px;
+    background: url(../assets/up1.png) no-repeat;
+    width: 70px;
+    right: 0;
+}
+#scrollup.show {
+    display: block;
+}
+@media only screen and (min-width: 870px) {
+    .span-break{
+        display: block;
+    }
+}
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+    #bannerTxt{
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 768px) and (min-width: 569px) {
+    #bannerTxt{
+        font-size: 38px;
+    }
+    .post-img-wrapper{
+        width: 350px;
+    }
+}
+@media only screen and (max-width: 768px) and (min-width: 575px) {
+    .col-sm-6{
+        max-width: 75%;
+        flex: 0 0 75%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    #footerContent1{
+        flex-direction: column;
+    }
+    #footerContent1Social{
+        margin-top: 15px;
+    }
+}
+@media only screen and (min-width: 651px) {
+    #footerContent1Img {
+        border-right: 1px solid #dee2e6!important;
+        padding-right: 1.5rem;
+    }
+    #footerContent1Social {
+        padding-left: 1.5rem;
+    }
+}
+@media only screen and (max-width: 568px) and (min-width: 451px){
+    #bannerTxt{
+        font-size: 32px;
+    }
+    #logoWrapper img{
+        height:60px;
+    }
+    .post-img-wrapper{
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    #scrollup {
+        height: 40px;
+    }
+    #bannerTxt{
+        font-size: 18px;
+    }
+    #logoWrapper img{
+        height:40px;
+    }
+    .post-img-wrapper{
+        width: 250px;
+    }
+   
+}
+@media only screen and (max-width: 400px) {
+    #bannerLftTxt, #bannerRghtTxt {
+        font-size: 10px;
+    }
+}
+
+
